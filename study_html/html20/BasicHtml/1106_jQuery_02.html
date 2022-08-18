@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>jQuery exam</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                // 03. attr set , css set 우선순위 css > attr
+                $("img").attr({
+                    alt: "jQuery img attributes",                    
+                    src: function (index) {
+                        // 변수
+                        var wSize = (index + 1) * 100;
+                        return "http://placehold.it/" + wSize + "x100";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img /><img /><img /><br/>
+        <h1>TEST</h1>
+        <img />
+    </body>
+</html>

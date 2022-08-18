@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>HTML5 Canvas Lesson</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            var context;
+
+            $(document).ready(function () {
+                context = $("#myCanvas").get(0).getContext("2d");
+                setInterval(function() {
+                    context.save();
+                    context.fillStyle = "rgba(0, 0, 0, 0.1)";
+                    context.fillRect(0, 0, 1024, 768);
+                    var x = Math.random() * 500;
+                    var y = Math.random() * 500;
+
+                    context.shadowColor = "white";
+                    context.shadowBlur = 20;
+                    context.fillStyle = randomColor();
+                    context.beginPath();
+                    context.arc(x, y, 10, 0, Math.PI * 2, true);
+                    context.fill();
+
+                    context.restore();
+                }, 1); // ms
+            });
+
+            function randomColor() {
+                var r = Math.round(Math.random() * 255);
+                var g = Math.round(Math.random() * 255);
+                var b = Math.round(Math.random() * 255);
+                
+                return "rgb(" + r + ", " + g + ", " + b + ")";
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" style="width: 100%; height: 768;"></canvas>
+    </body>
+</html>

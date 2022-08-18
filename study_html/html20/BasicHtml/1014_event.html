@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이벤트 예제</title>
+        <script>
+            window.onload = function() {
+                var button = document.getElementById("button1");
+                button.onclick = buttonClick;
+
+                var link = document.getElementById("link");
+                link.onclick = function() {
+                    return true;
+                }
+            };
+
+            function buttonClick() {
+                alert("20200807 Changed!!");
+            }
+        </script>
+    </head>
+    <body>
+        <input id="button1" type="button" value="입력" />
+        <button onclick="alert('두번째');">두번째</button><br/>
+        <a href="https://www.naver.com" id="link">네이버</a>
+    </body>
+</html>

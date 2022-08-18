@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Responsive Web Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <style>        
+        /* 모바일 */
+        /* @media (max-width: 499px) {
+            body { background-color: red; }
+        } */
+
+        /* 테블릿 */
+        /* @media (min-width: 500px) and (max-width: 799px) {
+            body { background-color: green; }
+        } */
+
+        /* 일반웹 */
+        /* @media (min-width: 800px) {
+            body { background-color: blue; }
+        } */
+
+        @media screen and (orientation: portrait) {
+            /* 세로기반으로 표시할때 */
+            body {
+                background-color: red;
+                font-weight: bold;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo vel ea, magnam illo, recusandae quasi eaque provident ut, cupiditate praesentium odit quidem quas illum sapiente necessitatibus nihil. Aliquam, sint?</h1>
+    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam et illo, itaque voluptas blanditiis dolor ea vero eos expedita cum rerum veniam voluptates atque quas. Molestias officiis vitae saepe.</p1>
+</body>
+</html>

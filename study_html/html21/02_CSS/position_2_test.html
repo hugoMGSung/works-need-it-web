@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body > div {
+            width: 400px;
+            height: 100px;
+            border: black solid 5px;
+            /* border-color: black;            
+            border-style: solid;
+            border-width: 5px; */
+            position: relative;
+            overflow-y: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            /* position: absolute; */
+            float: left;
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 50;
+        }
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 10;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, consectetur debitis ea sunt ullam aut est aliquid? Quos at eaque nemo eum rerum minus aliquid animi error? Ut, deserunt sequi.</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe magnam repellendus sed, ipsam quaerat incidunt labore. Nam unde cum vitae aliquid quia magnam adipisci quam, dolorem tempore, ullam minus?</h1>
+</body>
+</html>
