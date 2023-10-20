@@ -10,7 +10,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 1일차 학습내용
 <!-- ![멀티미디어](https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/day01.png) -->
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/day01.png" width="300">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/day01.png" width="300">
 
 ## 2일차
 - 프론트엔드 학습
@@ -26,7 +26,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 3일차 레이아웃
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/layout.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/layout.png" width="700">
 
 ## 4일차
 - 프론트엔드 학습
@@ -37,7 +37,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 4일차 그리드레이아웃 포토갤러리
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/gallery01.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/gallery01.png" width="700">
 
 ## 5일차
 - 프론트엔드 학습
@@ -52,7 +52,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 6일차 Bootstrap 앨범 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/album_theme.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/album_theme.png" width="700">
 
 
 ## 7일차
@@ -69,11 +69,11 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 7일차 핀터레스트 스타일 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/portfolio1.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/portfolio1.png" width="700">
 
 Parallax Scrolling Web
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/basic-html-2023/main/image/portfolio2.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/basic-html-2023/image/portfolio2.png" width="700">
 
 ## 8일차
 - 프론트엔트 학습
