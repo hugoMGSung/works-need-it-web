@@ -23,11 +23,11 @@ ASP.NET 학습 리포지토리
 	
 Bootstrap 앨범사이트 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet01.gif" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet01.gif" width="700">
 
 핀터레스트스타일 페이지 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet02.gif" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet02.gif" width="700">
 
 ## 4일차
 - ASP.NET Core MVC
@@ -36,14 +36,14 @@ Bootstrap 앨범사이트 클로닝
 
 ASP.NET Core MVC 게시판
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet03.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet03.png" width="700">
 
 ## 5일차
 - ASP.NET MVC
 	- 게시판 페이징
 		- Trumbwyg 에디터
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet04.gif" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet04.gif" width="700">
 	
 ## 6일차
 - ASP.NET Core MVC
@@ -52,7 +52,7 @@ ASP.NET Core MVC 게시판
 		- 회원가입
 		- 로그인
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet05.gif" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet05.gif" width="700">
 
 ## 7일차
 - ASP.NET Core MVC
@@ -69,7 +69,7 @@ ASP.NET Core MVC 게시판
 - ASP.NET Core MVC
 	- 부트스트랩 테마(SEO Dream) 적용
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet06.gif" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet06.gif" width="700">
 
 ## 9일차
 - ASP.NET Core MVC
@@ -81,11 +81,11 @@ ASP.NET Core MVC 게시판
 
 SEO Theme 완료
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet07.gif" width="700">	
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet07.gif" width="700">	
 
 다른 테마 적용
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet08.gif" width="700">	
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet08.gif" width="700">	
 	
 ## 10일차
 - ASP.NET RestAPI
@@ -93,18 +93,18 @@ SEO Theme 완료
 
 RestAPI Server
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/restapi01.png" width="700">		
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/restapi01.png" width="700">		
 	
 - 개인 포트폴리오 웹
 	- 부트스트랩 테마 재적용
 	
 메인화면 템플릿 - Start Bootstrap / [Personal Theme](https://startbootstrap.com/theme/personal)
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet09.png" width="700">	
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet09.png" width="700">	
 
 관리자화면 템플릿 - Theme Wagon / [Sneat Theme](https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/)
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet10.png" width="700">	
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/aspnet10.png" width="700">	
 
 ## 11일차
 - ASP.NET RestAPI
@@ -118,7 +118,7 @@ RestAPI Server
 	
 RestAPI사용 FrontEnd Web
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/restapi02.gif" width="700">	
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/restapi02.gif" width="700">	
 
 ## 13일차
 - ASP.NET RestAPI
@@ -126,5 +126,5 @@ RestAPI사용 FrontEnd Web
 	
 RestAPI사용 WPF App 및 Web화면
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/restapi03.png" width="700">
+<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu_aspnet_2023/images/restapi03.png" width="700">
 	
