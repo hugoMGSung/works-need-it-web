@@ -27,10 +27,10 @@ ASP.NET Core 학습 리포지토리
 2. 결과화면
 
 
-![메인화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/html_screen01.png)
+![메인화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/html_screen01.png)
 메인화면
 
-![라이트박스화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/html_screen03.png)
+![라이트박스화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/html_screen03.png)
 라이트박스화면
   
 
@@ -57,10 +57,10 @@ ASP.NET Core 학습 리포지토리
    
 2. 결과화면
 
-![게시판페이징화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen01.png)
+![게시판페이징화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen01.png)
 게시판페이징화면
 
-![게시판에디터화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen02.png)
+![게시판에디터화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen02.png)
 게시판에디터화면
 
 ## 8일차
@@ -71,10 +71,10 @@ ASP.NET Core 학습 리포지토리
    
 2. 결과화면
 
-![회원가입화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen03.png)
+![회원가입화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen03.png)
 회원가입화면
 
-![템플릿적용화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen04.png)
+![템플릿적용화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen04.png)
 템플릿적용화면
 
 ## 9일차
@@ -85,7 +85,7 @@ ASP.NET Core 학습 리포지토리
    
 2. 개발화면
 
-![DB연동 메인화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen05.png)
+![DB연동 메인화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen05.png)
 DB연동 메인화면
 
 ## 10일차
@@ -97,9 +97,9 @@ DB연동 메인화면
    
 2. 개발화면
 
-![권한관리화면](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen06.png)
+![권한관리화면](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen06.png)
 권한관리화면
 
-![새템플릿적용](https://raw.githubusercontent.com/hugoMGSung/studyASPNET/main/images/aspnet_screen07.png)
+![새템플릿적용](https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/studyASPNET2023/images/aspnet_screen07.png)
 새템플릿적용
 
