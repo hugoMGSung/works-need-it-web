@@ -40,3 +40,39 @@
 	);
 	```
 	
+	<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/images/web001.png" width="730">
+
+
+2. export default
+	- 함수 또는 클래스, 타입 등을 primitive로 내보내는 Javascript 키워드
+
+3. React는 그냥 js가 아님. JSX
+	- html의 class는 없음. className 으로 변경
+	- { 데이터 표시 }
+
+	```jsx
+	const hero = {
+  		name: 'Tony Stark',
+  		imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Robert_Downey%2C_Jr._2012.jpg',
+  		imgSize: 120,
+	}
+
+
+	function App() {
+  		return (
+    		<div className='App'>
+      			<h1>{hero.name}</h1>
+      			<img className='profile'
+           			src={hero.imgUrl} alt={'Photo of ' + hero.name}
+           			style={{
+            			width: hero.imgSize,
+            			height: hero.imgSize,
+            			borderRadius: '50%',
+           			}} >
+       			</img>
+    		</div>
+  		);
+	}
+	```
+
+	<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/images/web002.png" width="730">
