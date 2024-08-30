@@ -61,7 +61,9 @@
 1. 콘솔에 명령어 입력
 	```shell
 	> npx create-react-app basic-app01
+	> yarn create react-app basic-app01
 	```
+	- yarn으로 설치할 때 node_modules 용량이 조금 작음
 
 2. 설치완료 후 아래로 실행
 	```shell
@@ -70,7 +72,53 @@
 	> yarn start
 	```
 
+3. github에 올릴때 만들어진 .gitignore의 내용 복사해서 root의 .gitignore로 붙여넣기 
+	- 또는, 아래 코드(facebook 리액트 리포지토리 참조) 추가
+
+	```gitignore
+	.DS_STORE
+	node_modules
+	scripts/flow/*/.flowconfig
+	.flowconfig
+	*~
+	*.pyc
+	.grunt
+	_SpecRunner.html
+	__benchmarks__
+	build/
+	remote-repo/
+	coverage/
+	.module-cache
+	fixtures/dom/public/react-dom.js
+	fixtures/dom/public/react.js
+	test/the-files-to-test.generated.js
+	*.log*
+	chrome-user-data
+	*.sublime-project
+	*.sublime-workspace
+	.idea
+	*.iml
+	.vscode
+	*.swp
+	*.swo
+
+	packages/react-devtools-core/dist
+	packages/react-devtools-extensions/chrome/build
+	packages/react-devtools-extensions/chrome/*.crx
+	packages/react-devtools-extensions/chrome/*.pem
+	packages/react-devtools-extensions/firefox/build
+	packages/react-devtools-extensions/firefox/*.xpi
+	packages/react-devtools-extensions/firefox/*.pem
+	packages/react-devtools-extensions/shared/build
+	packages/react-devtools-extensions/.tempUserDataDir
+	packages/react-devtools-fusebox/dist
+	packages/react-devtools-inline/dist
+	packages/react-devtools-shell/dist
+	packages/react-devtools-timeline/dist
+	```
+
 #### 빠르게 구현해보기
+모든 작업은 src 아래에서 진행
 1. 컴포넌트 생성
 	- App.js에 MyButton 추가
 
@@ -126,3 +174,35 @@
 	```
 
 	<img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/images/web002.png" width="730">
+
+### JSX
+- JavaScript eXtension 의 약자. 자바스크립트의 확장문법으로 리액트에서 사용하기 위해
+	- JavaScript + XML/Html 
+
+	```js
+	const element = <h1>Hello, React</h1>;
+	```
+
+- JSX코드를 최종적으로 js 코드로 바꿈
+
+	```js
+	// 이거만 쓰면 어렵다!
+	React.createElement(
+		type,
+		[props],
+		[...children]
+	)
+	```
+
+- 기본적으로 html 태그 내에 {}로 리액트 변수값을 입력
+- 리액트 변수와 포맷문자열을 만들려면 `(back tag) 사용
+- 평소엔 ', " 사용가능
+
+
+#### 연습
+- basic-app02 프로젝트 생성
+	- library 폴더에 Book.jsx, Library.jsx 순서대로 작업
+	- index.js 파일 수정
+
+
+
