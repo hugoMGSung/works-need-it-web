@@ -35,19 +35,42 @@
 
 ## 개발 시작
 
+### 개발환경 설정
+1. node.js 설치
+	- 추가 yarn 설치 
+	- npm install --global yarn
+2. Visual Studio Code 설치
+3. VS Code 플러그인 설치
+	- Live Server
+	- ESLint
+	- Prettier
+	- Node Extension Pack
+	- React Tools
+4. 리액트 라이브러리 설치
+	```shell
+	# npm을 사용한 설치
+	> npm install -g create-react-app
+	# yarn을 사용한 설치
+	> yarn global add create-react-app
+	```
+
+### 패키지 없이 웹페이지에 리액트 적용하기
+- basic-app00
+
 ### 리액트 프로젝트 설치
 1. 콘솔에 명령어 입력
 	```shell
-	> npx create-react-app basic-app
+	> npx create-react-app basic-app01
 	```
 
 2. 설치완료 후 아래로 실행
 	```shell
-	> cd basic-app
-	> mpm start
+	> cd basic-app01
+	> npm start
+	> yarn start
 	```
 
-#### 빠르게 배우기
+#### 빠르게 구현해보기
 1. 컴포넌트 생성
 	- App.js에 MyButton 추가
 
