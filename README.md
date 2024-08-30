@@ -7,7 +7,7 @@
 ## Javascript 기본 학습
 
 ## Node.js 기본 학습
-- [Node](./basic_node/README.md)
+- [Node](./basic-node/README.md)
 
 ## Node Visualization
 - [Visualization](./study_node/visualization/readme.md)
