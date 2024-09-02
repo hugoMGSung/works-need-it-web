@@ -4,9 +4,9 @@ import Book from "./Book";
 function Library(props) {
 	return (
 		<div>
-			<Book name="이것이 파이썬이다." numOfPage={500} />
-			<Book name="이것이 코딩테스트다." numOfPage={400} />
-			<Book name="이것이 머신러닝이다." numOfPage={450} />
+			<Book name="이것이 데이터 분석이다 with 파이썬" price={28000} />
+			<Book name="이것이 C#이다" price={36000} />
+			<Book name="이것이 C++이다" price={25000} />
 		</div>
 	)
 }

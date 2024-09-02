@@ -204,5 +204,61 @@
 	- library 폴더에 Book.jsx, Library.jsx 순서대로 작업
 	- index.js 파일 수정
 
+#### 엘리먼트
+- 리엑트 앱을 구성하는 가장 작은 빌딩블록들
+- 화면에 보이는 것들을 기술
+
+	<img src="/images/web006.png" width="600">
+
+- 리액트 엘리먼트는 불변성을 가지고 있음
+- 엘리먼스를 생성후에는 Children이나 attribute를 바꿀 수 없음
+
+- 엘리먼트는 필요 시 새로 만들어서 교체해야 함
+
+#### 컴포넌트와 프롭스
+- Most Important
+- 자바스크립트 함수가 입력에 대한 출력이라고 하면
+	- 리액트 컴포넌트도 입력에 대한 출력을 내는 개체로 보면 됨
+- 단, 리액트 컴포넌트의 입력은 Props, 출력은 리액트 Element
+
+- Props = Properties 
+	- 컴포넌트의 속성
+	- 컴포넌트에 전달할 다양한 정보를 담은 JS 객체
+
+- 모든 리액트 컴포넌트는 Props 직접변경불가, 같은 Props에 서는 항상 같은 결과 기대
+
+##### Props 특징
+- 읽기 전용 - 값 변경 불가
+- 새로운 값을 컴포넌트에 전달, 새 Element 생성해야 함
+
+	```js
+	function App(props) {
+		return (
+			<Profile 
+				name="Hugo"
+				accountMoney={10000000} />
+		)
+	}
+
+	// 이후
+	{
+		name: "Hugo",
+		accountMoeny: 10000000
+	}
+
+	// createElement 로 생성(X)
+	React.createElement(
+		Profile,
+		{
+			name: "Hugo",
+			accountMoney: 10000000
+		},
+		null
+	);
+	```
+
+##### 컴포넌트 만들기
+- 함수로 만들기
+- 클래스로 만들기
 
 
