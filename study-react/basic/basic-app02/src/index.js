@@ -11,6 +11,9 @@ import reportWebVitals from './reportWebVitals';
 import CommentList from './comment/CommentList';
 import AttendBook from './listTest/AttendBook';
 import Register from './formTest/Registger';
+import CalcTemp from './shareState/CalcTemp';
+import ProfileCard from './compoTest/ProfileCard';
+import DarkOrLight from './contextTest/DarkOrLight';
 // import Dormitory from './hookTest/Dormitory';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -56,10 +59,32 @@ import Register from './formTest/Registger';
 //   </React.StrictMode>
 // );
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <Register />
+//   </React.StrictMode>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <CalcTemp />
+//   </React.StrictMode>
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <ProfileCard />
+//   </React.StrictMode>
+// );
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Register />
+    <DarkOrLight />
   </React.StrictMode>
 );
 

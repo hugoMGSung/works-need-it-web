@@ -483,3 +483,158 @@
 
 	<img src-"/images/web014.png" width="700">
 
+
+#### Shared State
+- 상태값을 여러개의 컴포넌트에서 표현해야 하는 경우 발생
+- GUI에서 폼간의 데이터 공유 등과 동일
+
+#### Composition
+- 여러 컴포넌트 조합 - children 속성
+	```js
+	React.createElement(
+		type,
+		[props],
+		[...children]
+	);
+	// ....
+	function Border(props) {
+		return (
+			<div className={'Border-' + props.color}>
+				{props.children}
+			</div>
+		);
+	}
+	```
+
+#### Context
+- 기존의 props를 전달하려면 상위에서 부터 하위 컴포넌트로 일일이 전달...
+- 무조건 좋지만은 않음
+- 여러 레벨로 내려가는 컴포넌트에서는 컨텍스트가 효과적
+
+	<img src="/images/web015.png" width="700">
+
+- C#, Java 등 OOP언어에서의 static과 유사
+
+	```js
+	const custContext = React.createContext('dark');
+	```
+
+##### Context API
+- Context.Provider - 모든 컨텍스트는 Provider 리액트 컴포넌트 포함
+
+	```js
+	<custContext.Provider value={ }/>
+	```
+- Context.Consumer - 컨텍스트 데이터를 구독(사용)하는 컴포넌트
+- Context.displayName - 컨텍스트의 이름
+
+- useContext() - 함수 컴포넌트에서 컨텍스를 사용할 수 있게 해주는 훅!
+
+	<img src="/images/web016.png" width="700">
+
+#### Styled Component
+- 기초레벨에서는 사용하지 말것
+
+	<img src="/images/web017.png" width="600">
+
+
+#### Production 빌드
+- 코드와 앱이 사용하는 이미지, css 파일등을 모두 모아 패키징
+
+	```shell
+	> npm run build
+	...
+	// build 폴더 생성됨
+	```
+
+- serve 패키지 설치
+	```shell
+	> npm install -g serve
+	...
+	> serve -s bulid
+	```
+
+### 리액트 게시판 프로젝트
+
+#### 프로젝트 설치
+- 콘솔/파워쉘/VS 터미널
+
+	```shell
+	> yarn create react-app simple-board
+	...
+	  cd simple-board
+	  yarn start
+
+	Happy hacking!
+	Done in 67.47s.
+	```
+
+#### 프로젝트 초기설정
+- 불필요한 파일 삭제 - 아래 파일 이외 삭제(아래파일은 지우지 마세요!!!)
+	- /public/
+		- favicon.ico
+		- index.html
+		- manifest.json
+		- robots.txt
+	- /src/
+		- App.css
+		- App.js
+		- index.css
+		- index.js
+		- reportWebVitals.js
+
+- App.js 수정
+	```js
+	import './App.css';
+
+	function App() {
+	return (
+		<div className="App">
+			<h2>Simple Board</h2>
+		</div>
+	);
+	}
+
+	export default App;
+	```
+
+	<img src="/images/web018.png" width="750">
+
+- ESLint, Prettier 설정
+	- VS Code 확장에서 설치
+
+- 프로젝트에 ESLint 설치
+	```shell
+	> npm i -D eslint eslint-plugin-prettier eslint-config-prettier
+
+	// 프로젝트 폴더에서 설치
+	> npx eslint --init
+	// 아래 진행 설명
+	```
+- Prettier 설치
+	```shell
+	> npm install -D prettier
+	```
+- root폴더에 .prettierrc.js 파일 생성 후 아래 코드 입력
+	```js
+	module.exports = {
+		endOfLine: "lf",
+		tabWidth: 4,
+		semi: true,
+		singleQuote: false,
+		trailingComma: "all",
+		printWidth: 120,
+	};
+	```
+- Ctrl + , 로 설정열기
+	- 설정열기(JSON) 클릭
+	- 아래 확인
+	```json
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.formatOnSave": true,
+	```
+
+#### 프로젝트 개발 시작
+- to be continued...
