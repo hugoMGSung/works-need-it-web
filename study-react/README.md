@@ -778,3 +778,7 @@
 1. BoardList.jsx 수정
 
 	<img src="/images/web025.png" width="750">
+
+
+
+2. BoardList와 BoardWrite를 한 화면에
