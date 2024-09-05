@@ -648,6 +648,11 @@
 	import "bootstrap/dist/css/bootstrap.min.css";
 	```
 
+- axios - 비동기 호출 모듈 설치
+
+	```shell
+	> npm i axios
+	```
 
 #### 프로젝트 개발 시작
 1. 서버실행, Bootstrap으로 글자체 변경 확인 요
@@ -706,4 +711,70 @@
 	);
 	```
 
-4. node 서버 index.js 수정
+4. node 서버 index.js 수정 후 실행. DB 확인
+	- localhost가 아닌 경우 Workbench > Users and Privileges 에서 사용자의 Host 중 % 계정 추가필요
+
+	<img src="/images/web022.png" width="600">
+
+#### React 사이드
+- BoardWrite.jsx에 axios 로직 추가
+- 클릭 시 CORS 오류 발생
+
+#### Node 사이드
+- cors 설치
+
+	```shell
+	> npm i cors
+	```
+
+- index.js require 부분에 작성
+	```js
+	const express = require("express");
+	const cors = require("cors");
+
+	const app = express();
+	//app.use(cors());  // 모든 접근 허용
+	app.use(cors({ origin: "http://localhost:3000" }));
+	```
+
+- 결과 확인
+
+	<img src="/images/web023.png" width="750">
+
+#### MySQL 사이드
+- 테이블 생성
+
+	```sql
+	create table BOARD (
+		IDX int not null auto_increment primary key,
+		TITLE varchar(200),
+		CONTENT varchar(4000),
+		REG_ID varchar(20),
+		REG_DATE DATETIME DEFAULT now(),
+		MOD_ID varchar(20),
+		MOD_DATE DATETIME DEFAULT now()
+	);
+	```
+
+- 테스트 데이터 입력 - query or GUI 직접입력
+
+#### Node 사이드 개발 시작
+1. index.js 파일에 rest API 코드 추가
+
+	```shell
+	app.get("/list", (req, res) => {
+		const sqlQuery = "SELECT * FROM board";
+		db.query(sqlQuery, (err, result) => {
+			res.send(result);
+		});
+	});
+	```
+
+2. 브라우저에서 확인
+
+	<img src="/images/web024.png" width="750">
+
+#### React 사이드
+1. BoardList.jsx 수정
+
+	<img src="/images/web025.png" width="750">

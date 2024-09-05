@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import Axios from "axios";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+
 function BoardList(props) {
+  const [boardList, setBoardList] = useState([]);
+
+  const Board = ({ idx, title, regId, regDate }) => {
+    return (
+      <tr>
+        <td>
+          <input type="checkbox"></input>
+        </td>
+        <td>{idx}</td>
+        <td>{title}</td>
+        <td>{regId}</td>
+        <td>{regDate}</td>
+      </tr>
+    );
+  };
+
+  const getList = () => {
+    Axios.get("http://localhost:8000/list", {})
+      .then((res) => {
+        const { data } = res;
+        setBoardList(data);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  };
+
+  getList();
+
   return (
     <div>
       <Table striped bordered hover>
@@ -15,42 +46,17 @@ function BoardList(props) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>1</td>
-            <td>게시판입니다</td>
-            <td>hugo</td>
-            <td>2024-09-01</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>2</td>
-            <td>잘만들어 봅시다</td>
-            <td>hugo</td>
-            <td>2024-09-02</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>3</td>
-            <td>모죠?</td>
-            <td>hugo</td>
-            <td>2024-09-03</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>4</td>
-            <td>글은 계속 됩니다</td>
-            <td>hugo</td>
-            <td>2024-09-05</td>
-          </tr>
+          {boardList.map((v) => {
+            return (
+              <Board
+                key={v.IDX}
+                idx={v.IDX}
+                title={v.TITLE}
+                regId={v.REG_ID}
+                regDate={v.REG_DATE}
+              />
+            );
+          })}
         </tbody>
       </Table>
       <div style={{ display: "flex", justifyContent: "center" }}>

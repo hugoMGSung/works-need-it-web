@@ -2,7 +2,15 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import Axios from "axios";
+
 function BoardWrite(props) {
+  const submitTest = () => {
+    Axios.get("http://localhost:8000/", {}).then(() => {
+      alert("테스트 완료!");
+    });
+  };
+
   return (
     <div>
       <Form>
@@ -15,7 +23,9 @@ function BoardWrite(props) {
           <Form.Control as="textarea" />
         </Form.Group>
       </Form>
-      <Button variant="info">작성완료</Button>
+      <Button variant="info" onClick={submitTest}>
+        작성완료
+      </Button>
       <Button variant="secondary">취소</Button>
     </div>
   );

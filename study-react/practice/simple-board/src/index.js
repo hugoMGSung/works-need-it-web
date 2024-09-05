@@ -10,7 +10,7 @@ import BoardWrite from "./board/BoardWrite";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BoardWrite />
+    <BoardList />
   </React.StrictMode>
 );
 
