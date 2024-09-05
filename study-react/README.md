@@ -636,5 +636,74 @@
 	"editor.formatOnSave": true,
 	```
 
+- react-bootstrap 설치
+
+	```shell
+	> npm i react-bootstrap bootstrap
+	```
+
+- index.js에 bootstrap.css 추가
+
+	```js
+	import "bootstrap/dist/css/bootstrap.min.css";
+	```
+
+
 #### 프로젝트 개발 시작
-- to be continued...
+1. 서버실행, Bootstrap으로 글자체 변경 확인 요
+2. /src/board/BoardList.jsx 생성, 작성
+3. index.js 수정(App.js를 수정해도 됨)
+
+	<img src="/images/web019.png" width="750">
+
+4. BoardWrite.jsx 생성, 작성
+
+	<img src="/images/web020.png" width="750">
+
+
+#### Node 백엔드 환경
+1. /practice/simple-backend 폴더 생성
+2. 터미널에서 초기화 시작
+
+	```shell
+	> npm init -y
+	```
+
+3. 필요 모듈 설치
+	```shell
+	> npm install express body-parser mysql
+	> npm install nodemon
+	```
+
+4. index.js 생성, 작성
+5. package.json 코드 추가
+
+	```json
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js", // 여기서 부터...
+		"dev": "nodemon index.js"
+	},
+	```
+
+6. 서버 명령어 변경
+	```shell
+	> npm run dev
+	```
+
+7. index.js 파일 수정
+8. 로그 확인
+
+	<img src="/images/web021.png" width="750">
+
+#### MySQL 서버 설정
+1. Workbench 오픈 접속
+2. reactBoard 스키마 생성 후 set as Default Schema 선택
+3. 단순 확인용 테이블 test 생성
+	```sql
+	create table test(
+		rowno int
+	);
+	```
+
+4. node 서버 index.js 수정
