@@ -1,16 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 
+let mountCount = 1;
+
 function BoardList(props) {
   const [boardList, setBoardList] = useState([]);
+  const [didMount, setDidMount] = useState(false);
 
-  const Board = ({ idx, title, regId, regDate }) => {
+  useEffect(() => {
+    console.log("mount: ", mountCount);
+    mountCount++;
+    setDidMount(true);
+    return () => {
+      console.log("unmount");
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("didMount: ", didMount);
+    if (didMount) {
+      console.log("api 호출");
+      const fetchData = [
+        {
+          name: "설거지",
+        },
+      ];
+      setBoardList(fetchData);
+      getList();
+    }
+  }, [didMount]);
+
+  const Board = ({ idx, title, regId, regDate }, props) => {
     return (
       <tr>
         <td>
-          <input type="checkbox"></input>
+          <input
+            type="checkbox"
+            value={idx}
+            onChange={(e) =>
+              props.onCheckboxChange(
+                e.currentTarget.checked,
+                e.currentTarget.value
+              )
+            }
+          ></input>
         </td>
         <td>{idx}</td>
         <td>{title}</td>
@@ -21,7 +56,7 @@ function BoardList(props) {
   };
 
   const getList = () => {
-    Axios.get("http://localhost:8000/list", {})
+    Axios.get("http://localhost:8000/api/board", {})
       .then((res) => {
         const { data } = res;
         setBoardList(data);
@@ -30,8 +65,6 @@ function BoardList(props) {
         console.error(e);
       });
   };
-
-  getList();
 
   return (
     <div>

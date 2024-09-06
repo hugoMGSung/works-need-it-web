@@ -779,6 +779,38 @@
 
 	<img src="/images/web025.png" width="750">
 
-
-
 2. BoardList와 BoardWrite를 한 화면에
+
+3. BoardWrite.jsx 수정
+
+4. BoardList.jsx 에 계속 호출 방지추가
+	```js
+	const [didMount, setDidMount] = useState(false);
+
+	useEffect(() => {
+		console.log("mount: ", mountCount);
+		mountCount++;
+		setDidMount(true);
+		return () => {
+		console.log("unmount");
+		};
+	}, []);
+
+	useEffect(() => {
+		console.log("didMount: ", didMount);
+		if (didMount) {
+		console.log("api 호출");
+		const fetchData = [
+			{
+			name: "설거지",
+			},
+		];
+		setBoardList(fetchData);
+		getList();
+		}
+	}, [didMount]);
+	```
+
+#### Node 사이드
+1. index.js에 /insert, /update API 메서드 추가
+
