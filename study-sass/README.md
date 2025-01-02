@@ -44,4 +44,4 @@
 2. [scss 폴더> comm.scss 파일]을 만들어 코드 작성후 하단의 Watch Sass를 누르면 [css폴더 > comm.css 파일]이 자동 생성
 3. scss 코드 추가 작성 후엔 save만 하면 자동 컴파일
 
-    <img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/main/pknu-aspnet-2023/images/aspnet26.gif" width="700">
+    <img src="https://raw.githubusercontent.com/hugoMGSung/works-need-it-web/refs/heads/main/images/web026.png" width="700">
