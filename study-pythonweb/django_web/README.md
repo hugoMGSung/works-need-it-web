@@ -68,3 +68,80 @@ def index(request):
 - http://127.0.0.1:8090/admin 접속확인
 
 <img src="../../images/web030.png" width="600">
+
+
+### static 폴더 생성
+- mysite 아래 static 폴더 생성
+- static 폴더에 이미지 저장
+
+- settings.py 파일 수정
+
+    ```py
+    # LANGUAGE_CODE = 'en-us'
+    LANGUAGE_CODE = 'ko-kr'
+    TIME_ZONE = 'Asis/Seoul'
+    USE_I18N = True
+    USE_TZ = True
+
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/4.2/howto/static-files/
+
+    STATIC_URL = 'static/'
+    STATICFILES_DIRS = ( 
+        os.path.join(BASE_DIR, 'static'),
+    )
+    ```
+
+- index.html  수정
+
+    ```html
+    <body>
+        <h1>dJango Main Page</h1>
+        {% load static %}
+        <img src="{% static 'cebu01.png' %}" alt="cebu image">
+    </body>
+    ```
+
+    <img src="../../images/web031.png" width="600">
+
+
+## 장고 모델
+- MTV(Model Template View) 로 호칭
+
+### 블로그 페이지 생성
+- urls.py 파일 수정
+
+    ```py
+    from main.views import index, blog
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('', index),
+        path('blog/', blog),
+    ]
+    ```
+
+- views.py 수정
+
+    ```py
+    def blog(request):
+        return render(request, 'main/blog.html')
+    ```
+
+- blog.html 생성
+
+    ```html
+        <title>dJango Blog</title>
+        {% load static %}
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    </head>
+    <body>
+        <h1>dJango Blog Page</h1>
+        {% load static %}
+        <img src="{% static 'cebu02.jpg' %}" alt="cebu image">
+    </body>
+    </html>
+    ```
+
+    <img src="../../images/web032.png" width="600">
+
