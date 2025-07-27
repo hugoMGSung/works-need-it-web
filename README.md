@@ -24,3 +24,11 @@
 
 ## ReactNative 학습
 - [ReactNative](./study-reactnative/README.md)
+
+## dJango 학습
+- [링크](./study-pythonweb/django_web/README.md)
+
+- PS에서 Activate.ps1 에서 FullyQualifiedErrorId : UnauthorizedAccess 문제 발생시
+    ```shell
+    > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
